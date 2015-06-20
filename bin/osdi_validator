@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'osdi_validator'
+
+validator = OSDIValidator::Validator.new
+validator.validate
