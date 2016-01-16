@@ -5,7 +5,8 @@ describe OsdiValidator do
     expect(OsdiValidator::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'can connect to an api' do
+    validator = OSDIValidator::Validator.new("http://opensupporter.org/api/", "apikey")
+    expect(validator.validate())
   end
 end
